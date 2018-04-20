@@ -1,0 +1,33 @@
+.bestOriginalScreenplay .VueCarousel-wrapper {
+	padding-top: 0;
+}
+.bestSupportingActress .VueCarousel-wrapper {
+	padding-top: 0;
+}
+.isDesktop #stickyHeader {
+	padding-left: 15px;
+	margin-left: -15px;
+}
+.byline.home {
+	font-family: 'ropasans', Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+	line-height: 2em;
+	color: #537d94;
+	text-align: center;
+	@media (max-width:768px) {
+		font-size: 0.7em;
+		line-height: 2em;
+	}
+}
+
+.hideVoters {
+	display: block;
+	.laurels {
+		display: block;
+		text-align: center;
+		img {
+			max-width: 1242px;
+		}
+	}
+}

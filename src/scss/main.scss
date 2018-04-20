@@ -1,0 +1,219 @@
+// $main-bg-color: #01455a;
+
+@import './vendor/video.js/dist/video-js.css';
+@import './vendor/bootstrap-3.3.7/css/bootstrap.min.css';
+@import 'fonts';
+@import 'variables';
+body {
+	margin: 0;
+	background-color: $body-bg;
+	&.menu-open, &.hide-global-menu {
+		position: fixed;
+	}
+	&.menu-open {
+		.hideme {
+			opacity: 1 !important;
+		}
+	}
+}
+.hiddenscroll { transition: opacity 1.0s; }
+.hideme, .hiddenscroll {
+	opacity: 0;
+	&.showme {
+	transition: opacity 1.0s;
+		opacity: 1;
+	}
+}
+.nopadding {
+	padding: 0;
+}
+.nofloat {
+	float: none;
+}
+/*
+.banner {
+	margin: 0;
+	@media (min-width: 992px) {
+		display: table;
+		> [class*='col-'] {
+			float: none;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}*/
+.container {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+}
+.intro {
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+	margin: 40px auto;
+	h1 {
+		font-size: 2em;
+		letter-spacing: 0.1em;
+		line-height: 1em;
+		@media (max-width: 768px) {
+			font-size: 1.5em;
+		}
+	}
+	p {
+		font-size: 1.5em;
+		letter-spacing: 0.1em;
+		line-height: 1.2em;
+		@media (max-width: 768px) {
+			font-size: 1em;
+		}
+	}
+	img {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	@media (max-width: 768px) {
+		margin: 20px 0 30px;
+		padding: 0 20px;
+	}
+}
+#app {
+	font-size: 20px;
+	position: relative;
+	// background-image: url('assets/page-bg.jpg');
+	// background-attachment: fixed;
+	  // Fixed-position background image
+	  &::before {
+	    content: ' ';
+	    position: fixed; // instead of background-attachment
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    background-color: #01455a;
+	    background: url('assets/page-bg.jpg');
+	    will-change: transform; // creates a new paint layer
+	    z-index: -1;
+	  }	
+	h1 {
+		color: #afb886;
+		font-family: 'barlowmedium', sans-serif;
+		font-weight: 20;
+		margin: 10px 0 10px;
+		padding:20px 0 0;
+		text-align: center;
+	}
+	h2 {
+		font-family: 'ropasans', sans-serif;
+		text-align: center;
+		color: #afb886;
+		font-size: 5vw
+	}
+	p {
+		font-family: 'barlowlight', sans-serif;
+		color: #afb886;
+		font-weight: normal;
+	}
+	&.category-open {
+		#categoryPages {
+			opacity: 1;
+			pointer-events: all;
+		}
+		> *:not(#categoryPages):not(.modal):not(#stickyHeader):not(#backToTop) {
+			display: none;
+		}
+	}
+}
+#stickyHeader {
+	position: fixed;
+	top: 0;
+	background-image: url('./assets/page-bg.jpg');
+	// height: 50px;
+	width: 100%;
+	z-index: 9999999;
+	text-align: center;
+	text-transform: uppercase;
+	h1 {
+		color: #fff;
+		font-size: 5vw;
+		line-height: 1;
+		letter-spacing: 0.1em;
+		padding-top: 0;
+		@media (min-width:768px) and (max-width: 900px) {
+			font-size: 6vw;
+			padding-top: 0;
+		}
+		@media (max-width:768px) {
+			font-size: 6vw;
+			padding-top: 0;
+		}
+	}
+    h2 {
+        @media (min-width: 768px) and (max-width: 900px) {
+        font-size: 2vw;
+        }
+    }
+	h3 {
+		font-family: 'barlowthin', sans-serif;
+		color: #afb886;
+		font-weight: 300;
+		font-size: 2.5vw;
+		letter-spacing: 3px;
+		margin: 10px 0;
+		@media (max-width:768px) {
+			font-size: 5vw;
+		}
+	}
+}
+.video.col-xs-10, .video.col-xs-12 {
+	// float:none;
+}
+.video-js {
+	width: 100%;
+	height: 100%;
+	&.vjs-fluid {
+		height: 100%;
+		width: 100%;
+	}
+}
+.video-js .vjs-big-play-button {
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+
+.VueCarousel-navigation-prev {
+	left: 50% !important;
+	width: 50% !important;
+	height: 100% !important;
+}
+
+.VueCarousel-navigation-next {
+    right: 50% !important;
+    width: 50% !important;
+    height: 100% !important;
+}
+
+.VueCarousel-navigation-button {
+	opacity: 0;
+}
+
+@import 'hero';
+@import 'hamburger';
+@import 'modal';
+@import 'categories';
+@import 'backToTop';
+@import 'lockups';
+
+@import 'criticQuote';
+@import 'sliderImage';
+@import 'sliderQuote';
+@import 'productionQuote';
+@import 'voters';
+@import 'categoryPages';
+
+@import 'pdf';
+@import 'clickThru';
+@import 'social';
+@import 'legal';
+@import 'fixes';

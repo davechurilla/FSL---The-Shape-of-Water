@@ -1,0 +1,16 @@
+.social-container {
+	text-align: center;
+	display: block;
+	margin: 40px auto;
+	.social {
+		display: inline-block;
+		padding: 0 3%;
+		img {
+			height: 40px;
+		}
+		@media (min-width: 768px) {
+			padding: 0 2%;
+		}
+	}
+}
+/*Mobile styles*/

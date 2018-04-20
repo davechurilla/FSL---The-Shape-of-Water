@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fox Searchlight - The Shape of Water</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
+
+		<!-- If you'd like to support IE8 -->
+		<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+	</head>
+	<body>
+		<div id="app"></div>
+	</body>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://vjs.zencdn.net/6.4.0/video.js"></script>
+	<script>
+		$(document).ready(function() {
+			onScroll();
+			$(window).scroll(onScroll);
+			$('.categoryPage').scroll(onScroll);
+			$(".carousel").carousel({
+				interval: 6000,
+				pause: null
+			})
+		});
+		function onScroll(event) {
+			$('.hideme').each(function(i){
+				var displayThreshold = 100;
+				var topOfObject = $(this).position().top;
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				if ((bottom_of_window - displayThreshold) > topOfObject) {
+					$(this).addClass('showme');
+				}
+			});
+			$('.hiddenscroll').each(function(i) {
+				if ($(window).scrollTop() * 4 >= $(document).height() || (event ? $(event.target).scrollTop() * 4 >= $(document).height() : false)) {
+					$(this).addClass('showme');
+				} else {
+					$(this).toggleClass('showme', false);
+				}
+			})
+		}
+	</script>
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '141251233177093');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=141251233177093&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111425374-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-111425374-1');
+	</script>	
+</html>

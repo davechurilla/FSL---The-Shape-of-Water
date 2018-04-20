@@ -1,0 +1,68 @@
+.laurels {
+	background: #01394a;
+	padding: 40px 0;
+	.awards-container {
+		text-align: center;
+		.award-wrapper {
+			display: inline-block;
+			.awards-inner {
+				display: inline-block;
+				height: 15vw;
+				max-height: 150px;
+				box-sizing: initial;
+				padding-right: 20px;
+				img {
+					height: 100%;
+					width: auto;
+				}
+			}
+			&:last-of-type {
+				.awards-inner {
+					&:last-of-type {
+						padding-right: 0;
+					}
+				}
+			}
+			@media (max-width: 992px) {
+				display: block;
+				.awards-inner {
+					height: 19vw;
+				}
+				&:first-of-type {
+					margin-bottom: 20px;
+					.awards-inner {
+						&:last-of-type {
+							padding-right: 0;
+						}
+					}
+				}
+				&:not(:first-of-type) {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	&.rotate {
+		.carousel {
+			text-align: center;
+			.carousel-inner {
+				.item {
+					height: 10vw;
+					max-height: 150px;
+					img {
+						display: inline-block;
+						height: 100%;
+						&:not(:last-of-type) {
+							padding-right: 40px;
+						}
+					}
+				}
+				@media (max-width: 992px) {
+					.item {
+						height: 19vw;
+					}
+				}
+			}
+		}
+	}
+}

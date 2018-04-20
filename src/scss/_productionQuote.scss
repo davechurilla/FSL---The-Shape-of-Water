@@ -1,0 +1,69 @@
+#app {
+	.production-quote {
+		overflow: visible;
+		font-family: 'ropasans', Helvetica, Arial, sans-serif;
+		color: #afb886;
+		font-size: 20px;
+		text-transform: uppercase;
+		padding:20px;
+		display: table;
+		.item {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0;
+			// opacity: 0;
+			transition: all 0.5s;
+			p {
+				font-size: 4vw;
+				line-height: 6vw;
+				letter-spacing: 0.2vw;
+				padding: 0 20px;
+				margin: 0;
+				@media (min-width: 992px) {
+					font-size: 1.5vw;
+					line-height: 2.5vw;
+				}
+				@media (max-width:768px) {
+					font-size: 5vw;
+					line-height: 8vw;
+				}
+			}
+			.quote {
+				text-align: center;
+				margin: auto;
+				img {
+					width: 20px;
+					height: 20px;
+				}
+				&.top {
+					padding: 0 0 20px 0;
+				}
+				&.bottom {
+					padding: 20px 0;
+				}
+			}
+			.byline {
+				font-family: 'ropasans', Helvetica, Arial, sans-serif;
+				font-size: 4vw;
+				// font-size: 20px;
+				color: #537d94;
+				text-align: center;
+				span {
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+				@media (min-width: 992px) {
+					font-size: 1.5vw;
+					line-height: 2.5vw;
+				}
+				@media (max-width:768px) {
+					font-size: 5vw;
+					line-height: 8vw;
+				}
+			}
+		}
+		@media (max-width:992px) {
+			margin: 50px 0;
+		}
+	}
+}

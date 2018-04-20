@@ -1,0 +1,28 @@
+#backToTop {
+	position: fixed;
+	width: 15vw;
+	height: 15vw;
+	max-width: 72px;
+	max-height: 72px;
+	bottom: 100px;
+	right: 5vw;
+	background-image: url('./assets/icon-back-to-top.png');
+	background-size: contain;
+	cursor: pointer;
+	z-index: 999;
+	&:hover {
+		animation: bounce 1s infinite;		
+	}
+}
+@keyframes bounce {
+	0% {
+		bottom: 100px;
+	}
+	50% {
+		bottom: 105px;
+	}
+	100% {
+		bottom: 100px;
+
+	}
+}
