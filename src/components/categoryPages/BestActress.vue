@@ -20,7 +20,7 @@
 			<critic-quote :criticSliderContent="criticSlider1" class="col-xs-12 no-pad"></critic-quote>
 			<div class="col-xs-12 col-md-8 col-md-offset-2 video no-pad hideme">
 				<video class="video-js vjs-default-skin" controls preload="none" data-setup='{"fluid": true}' poster="../../assets/video/best_actress_01.jpg">
-					<source src="../../assets/video/best_actress_01.mp4" type='video/mp4' />
+					<source src="http://videos.davechurilla.com/tsow/best_actress_01.mp4" type='video/mp4' />
 				</video>
 			</div>
 		</div>
@@ -30,7 +30,7 @@
 			<production-quote id="bestActressProdQuote2" :prodQuote="productionQuote2" class="col-xs-12 col-md-6 col-md-push-6"></production-quote>
 			<div class="col-xs-12 col-md-6 col-md-pull-6 video no-pad hideme">
 				<video class="video-js vjs-default-skin" controls preload="none" data-setup='{"fluid": true}' poster="../../assets/video/best_actress_02.jpg">
-					<source src="../../assets/video/best_actress_02.mp4" type='video/mp4' />
+					<source src="http://videos.davechurilla.com/tsow/best_actress_02.mp4" type='video/mp4' />
 				</video>
 			</div>
 			<production-quote id="bestActressProdQuote3" :prodQuote="productionQuote3" class="col-xs-12 col-md-6"></production-quote>

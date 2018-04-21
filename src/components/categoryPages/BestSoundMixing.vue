@@ -8,7 +8,7 @@
 		<critic-quote id="bestDirectorCriticSlider1" :criticSliderContent="criticSlider1" class="col-xs-12 no-pad"></critic-quote>
 			<div class="col-xs-12 col-md-8 col-md-offset-2 video no-pad hideme">
 				<video class="video-js vjs-default-skin" controls preload="none" data-setup='{"fluid": true}' poster="../../assets/dazzling-dive-v6-01.jpg">
-					<source src="../../assets/video/Dazzling-Dive-v6.mp4" type='video/mp4' />
+					<source src="http://videos.davechurilla.com/tsow/Dazzling-Dive-v6.mp4" type='video/mp4' />
 				</video>
 			</div>
 		</div>
