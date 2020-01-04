@@ -2,7 +2,6 @@
 	.voters {
 		padding: 40px;
 		@media (min-width: 992px) {
-		/*background: #001d30;*/
 		}
 		.voters-outer {
 			.voters-header {
@@ -26,10 +25,8 @@
 						font-size: 20px !important;
 						text-transform: uppercase;
 						padding: 0 5%;
-						/*max-width: 400px;*/
 						.voters-top {
 							font-family: 'barlowthin', Helvetica, Arial, sans-serif;
-							// border-bottom: 1px solid #eae7c5;
 							padding: 0;
 							font-size:18px;
 							color: #afb886 !important;
@@ -39,7 +36,6 @@
 							margin: 0 auto;
 							margin-bottom: 5px;
 							@media (min-width: 992px) {
-								// margin-bottom: 1vw;
 							}
 						}
 						.voters-middle {
@@ -73,12 +69,10 @@
 							width: 100%;
 							margin: 0 auto;
 							max-width: 400px;
-							/*margin-top: -10px;*/
 							display: block;
 
 						}
 						@media (min-width: 992px) {
-							// padding: 0;
 						}
 					}
 				}

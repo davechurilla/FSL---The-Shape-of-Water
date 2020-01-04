@@ -88,30 +88,22 @@ export default {
     mounted() {
     	var catTop = 0;
     	$('.categoryPage').scroll(function(e) {
-    	// console.log($('.category-title').offset())
     		var scrollerTop = $(e.target).find('.category-title').offset().top;
     		var scrollerAnchor = $(e.target).find('.scroller-anchor').offset().top;
     		var scrollerHeight = $(e.target).find('.category-title').height();
-    		// var catTop = $('.category-title').offset().top;
     		if (catTop == 0) {
     			catTop = $(this).find('.category-title').offset().top;
     		}
-    		// console.log($(this).scrollTop(), scrollerHeight, catTop);
-    		// if ($(this).scrollTop() >= scrollerHeight && scrollerTop <= 0) {
     		if  ($(this).scrollTop() > catTop && $(e.target).find('.category-title').hasClass('sticky') == false) {
-    			// console.log('a');
     			$(e.target).find('.scroller-anchor').height(scrollerHeight);
     			$(e.target).find('.category-title').addClass('sticky');
     			$(e.target).find('.category-title').clone().appendTo('#stickyHeader')
     		} else if ($(this).scrollTop() <= catTop && $(e.target).find('.category-title').hasClass('sticky')) {
-    			// console.log('c');
     			$(e.target).find('.category-title').removeClass('sticky')
     			$(e.target).find('.category-title').attr('style', '');
     			$('#stickyHeader').empty();
     		} else {
-    			// console.log('d');
-    			// $(e.target).find('.category-title').removeClass('sticky')
-
+                // do nothing
     		}
     	});
         var ua = window.navigator.userAgent;

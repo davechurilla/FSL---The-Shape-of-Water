@@ -17,15 +17,6 @@
 				</li>
 			</ul>
 		</div>
-		<!-- <p>
-			&trade; AND &copy; TWENTIETH CENTURY FOX FILM CORPORATION.<br />
-			ALL RIGHTS RESERVED. PROPERTY OF FOX.
-		</p>
-		<p>
-			<a href="https://www.foxprivacy.com/us/terms_whatsnew.html" target="_blank">NEW TERMS AND CONDITIONS (WHAT’S CHANGED?)</a><br />
-			<a href="https://www.foxprivacy.com/us/privacy.html" target="_blank">NEW PRIVACY POLICY</a><br />
-			<a href="https://www.foxprivacy.com/us/privacy.html#section2" target="_blank">AD CHOICES</a>
-		</p> -->
 	</div>
 </template>
 

@@ -1,13 +1,11 @@
 .legal {
 	font-size: 20px;
 	background: #00455a;
-	// padding-bottom: 20px;
 	text-align: center;
 	text-transform: uppercase;
 	.footer-trigger {
 		color: #537d94;
 		padding: 20px 0;
-		// padding-bottom: 0px;
 		letter-spacing: 0.1em;
 		font-family: 'ropasans', Helvetica, Arial, sans-serif;
 		transition: all 0.5s ease;
@@ -17,7 +15,6 @@
 		}
 	}
 	.footer-content {
-		// padding-top: 20px;
 		height: 0px;
 		transition: all 0.5s ease;
 		max-width: 420px;
@@ -74,13 +71,11 @@
 	}
 	&.open {
 		.footer-trigger {
-			// padding-bottom: 20px;
 			&:before {
 				content: 'CLOSE'
 			}
 		}
 		.footer-content {
-			// padding-top: 20px;
 			height: 160px;
 			@media (max-width:768px) {
 				height: 180px;

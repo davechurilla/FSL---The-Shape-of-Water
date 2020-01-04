@@ -30,18 +30,6 @@ body {
 .nofloat {
 	float: none;
 }
-/*
-.banner {
-	margin: 0;
-	@media (min-width: 992px) {
-		display: table;
-		> [class*='col-'] {
-			float: none;
-			display: table-cell;
-			vertical-align: middle;
-		}
-	}
-}*/
 .container {
 	width: 100%;
 	text-align: center;
@@ -80,9 +68,6 @@ body {
 #app {
 	font-size: 20px;
 	position: relative;
-	// background-image: url('assets/page-bg.jpg');
-	// background-attachment: fixed;
-	  // Fixed-position background image
 	  &::before {
 	    content: ' ';
 	    position: fixed; // instead of background-attachment
@@ -166,7 +151,6 @@ body {
 	}
 }
 .video.col-xs-10, .video.col-xs-12 {
-	// float:none;
 }
 .video-js {
 	width: 100%;
