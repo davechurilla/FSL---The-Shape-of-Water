@@ -1,26 +1,6 @@
 <template>
 	<div id="app" :class="{'hide-global-menu category-open' : activeCategory != '', 'menu-open' : showModal}">
 		<hero class="home-hero" :content="heroContent" @hamburger="hamburgerClicked"></hero>
-<!-- 		<div class="banner laurels clearfix">
-		    <div class="awards-container">
-		    	<div class="award-wrapper hideme">
-			        <div class="awards-inner hideme">
-			            <img src="./assets/lockups/GG_Winner_LockUp.png" alt="Awards Tout" />
-			        </div>
-			        <div class="awards-inner hideme">
-			            <img src="./assets/lockups/BAFTA_lockup.png" alt="Awards Tout" />
-			        </div>
-			    </div>
-		    	<div class="award-wrapper hideme">
-			        <div class="awards-inner hideme">
-			            <img src="./assets/lockups/CC_lockup.png" alt="Awards Tout" />
-			        </div>
-			        <div class="awards-inner hideme">
-			            <img src="./assets/lockups/PGA_lockup.png" alt="Awards Tout" />
-			        </div>
-			    </div>
-	    	</div>
-		</div> -->
 		<div class="laurels rotate">
 			<div class="carousel slide carousel-fade" data-ride="carousel">
 				<div class="carousel-inner">
